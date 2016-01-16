@@ -1,0 +1,31 @@
+{
+  "name": "compiled-example",
+  "version": "1.0.0",
+  "description": "Example that uses \"compiled\" approach to target client environment during installation",
+  "main": "dist/compiled.js",
+  "dependencies": {
+    "compiled": "1.4.0",
+    "lodash": "4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "build src/index.js",
+    "postinstall": "compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/compiled-example.git"
+  },
+  "keywords": [
+    "example",
+    "demo",
+    "compiled"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/compiled-example/issues"
+  },
+  "homepage": "https://github.com/bahmutov/compiled-example#readme"
+}
