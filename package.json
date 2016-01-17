@@ -4,15 +4,19 @@
   "description": "Example that uses \"compiled\" approach to target client environment during installation",
   "main": "dist/compiled.js",
   "dependencies": {
-    "compiled": "1.4.2",
+    "compiled": "1.5.1",
     "lodash": "4.0.0",
     "promise-polyfill": "3.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "git-issues": "1.2.0"
+  },
   "scripts": {
     "test": "npm run build && npm run postinstall && node .",
     "build": "DEBUG=compiled build src/index.js",
-    "postinstall": "DEBUG=compiled compile"
+    "compile": "DEBUG=compiled compile",
+    "postinstall": "DEBUG=compiled compile",
+    "issues": "git-issues"
   },
   "repository": {
     "type": "git",
