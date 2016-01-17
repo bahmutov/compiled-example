@@ -4,14 +4,14 @@
   "description": "Example that uses \"compiled\" approach to target client environment during installation",
   "main": "dist/compiled.js",
   "dependencies": {
-    "compiled": "1.4.0",
+    "compiled": "1.4.1",
     "lodash": "4.0.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "build src/index.js",
-    "postinstall": "compile"
+    "test": "npm run build && npm run postinstall && node .",
+    "build": "DEBUG=compiled build src/index.js",
+    "postinstall": "DEBUG=compiled compile"
   },
   "repository": {
     "type": "git",

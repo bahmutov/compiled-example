@@ -1,6 +1,8 @@
 # compiled-example
 > Example that uses "compiled" approach to target client environment during installation
 
+[![Build status][ci-image] ][ci-url]
+
 See repo [bahmutov/compiled](https://github.com/bahmutov/compiled) and read
 the blog post [JavaScript needs the compile step (on install)][post]
 
@@ -45,3 +47,6 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
+
+[ci-image]: https://travis-ci.org/bahmutov/compiled-example.png?branch=master
+[ci-url]: https://travis-ci.org/bahmutov/compiled-example
