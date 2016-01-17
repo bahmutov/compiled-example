@@ -1,6 +1,8 @@
 'use strict';
 
 var lodash_fp = require('lodash/fp');
+var Promise = require('promise-polyfill');
+Promise = 'default' in Promise ? Promise['default'] : Promise;
 
 const add = (a, b) => a + b
 

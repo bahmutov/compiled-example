@@ -1,5 +1,7 @@
 import { add } from './calc'
 import { head } from 'lodash/fp'
+import Promise from 'promise-polyfill'
+
 
 const sum = add(2, 3)
 console.log(`2 + 3 = ${sum}`)

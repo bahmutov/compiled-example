@@ -4,8 +4,9 @@
   "description": "Example that uses \"compiled\" approach to target client environment during installation",
   "main": "dist/compiled.js",
   "dependencies": {
-    "compiled": "1.4.1",
-    "lodash": "4.0.0"
+    "compiled": "1.4.2",
+    "lodash": "4.0.0",
+    "promise-polyfill": "3.1.0"
   },
   "devDependencies": {},
   "scripts": {

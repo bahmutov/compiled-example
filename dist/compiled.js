@@ -1,6 +1,8 @@
 'use strict';
 
 var lodash_fp = require('lodash/fp');
+var Promise = require('promise-polyfill');
+Promise = 'default' in Promise ? Promise['default'] : Promise;
 
 var add = function (a, b) {
   return a + b;
