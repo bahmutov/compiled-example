@@ -2,9 +2,15 @@
   "name": "compiled-example",
   "version": "1.0.0",
   "description": "Example that uses \"compiled\" approach to target client environment during installation",
-  "main": "dist/compiled.js",
+  "main": "dist/index.compiled.js",
+  "config": {
+    "compiled": {
+      "dir": "dist",
+      "files": ["src/index.js"]
+    }
+  },
   "dependencies": {
-    "compiled": "1.5.1",
+    "compiled": "1.8.0",
     "lodash": "4.0.0",
     "promise-polyfill": "3.1.0"
   },
@@ -13,7 +19,7 @@
   },
   "scripts": {
     "test": "npm run build && npm run postinstall && node .",
-    "build": "DEBUG=compiled build src/index.js",
+    "build": "DEBUG=compiled build",
     "compile": "DEBUG=compiled compile",
     "postinstall": "DEBUG=compiled compile",
     "issues": "git-issues"
