@@ -10,7 +10,7 @@
     }
   },
   "dependencies": {
-    "compiled": "1.8.0",
+    "compiled": "1.13.0",
     "lodash": "4.0.0",
     "promise-polyfill": "3.1.0"
   },
