@@ -7,6 +7,7 @@ const add = (a, b) => a + b
 const sum = add(2, 3)
 console.log(`2 + 3 = ${sum}`)
 
+const a = ['foo', 'bar', 'baz']
 console.log(`first element of ${a} is`, lodash_fp.head(a))
 
 Promise.resolve(42)
@@ -46,21 +47,24 @@ surveyAnswers.forEach(function (pleasure) {
 console.log(`number of life pleasures ${pleasures.size}`);
 
 // Symbols
-let a = new Map();
-a.set(Symbol(), 'Noise');
-
-// Prints "1" although the one element cannot be accessed!
-console.log('Map uses symbol, size', a.size);
+(function symbols() {
+  let a = new Map();
+  a.set(Symbol(), 'Noise');
+  // Prints "1" although the one element cannot be accessed!
+  console.log('Map uses symbol, size', a.size);
+}());
 
 // more examples from http://es6-features.org/
-var params = [ "hello", true, 7 ]
-var other = [ 1, 2, ...params ] // [ 1, 2, "hello", true, 7 ]
-console.assert(other.length === 5)
+(function spread() {
+  var params = [ "hello", true, 7 ]
+  var other = [ 1, 2, ...params ] // [ 1, 2, "hello", true, 7 ]
+  console.assert(other.length === 5)
 
-var str = "foo"
-var chars = [ ...str ] // [ "f", "o", "o" ]
-console.assert(chars.length === 3)
-console.assert(chars[0] === 'f')
+  var str = "foo"
+  var chars = [ ...str ] // [ "f", "o", "o" ]
+  console.assert(chars.length === 3)
+  console.assert(chars[0] === 'f')
+}());
 
 var foo3 = 'foo'.repeat(3)
 console.assert(foo3 === 'foofoofoo', 'string repeat')
